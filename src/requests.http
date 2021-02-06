@@ -1,0 +1,33 @@
+### auth signUp
+POST http://localhost:3000/api/auth/signup
+Content-Type: application/json
+
+{
+    "username": "ramon",
+    "email": "garciaramonangel@gmail.com",
+    "password": "secret"
+}
+
+### auth signIn
+POST http://localhost:3000/api/auth/signin
+Content-Type: application/json
+
+{
+    "email": "garciaramonangel@gmail.com",
+    "password": "secret"
+}
+
+### creditCard create
+POST http://localhost:3000/api/credit-cards
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwMWQ4ZWM3OTU2ZDVmMjNjODgwNDliNSIsImVtYWlsIjoiZ2FyY2lhcmFtb25hbmdlbEBnbWFpbC5jb20iLCJpYXQiOjE2MTI1NDk4NTIsImV4cCI6MTYxMjYzNjI1Mn0.OFPx4dWK0zMQGfLuexosklx8huj_pf-_mngCYmRDgGY
+
+{
+    "userId": "601d8ec7956d5f23c88049b5",
+    "brandType": "mAster"
+}
+
+### creditCards by userId
+GET http://localhost:3000/api/credit-cards?userId=601d8ec7956d5f23c88049b5
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwMWQ4ZWM3OTU2ZDVmMjNjODgwNDliNSIsImVtYWlsIjoiZ2FyY2lhcmFtb25hbmdlbEBnbWFpbC5jb20iLCJpYXQiOjE2MTI1NDk4NTIsImV4cCI6MTYxMjYzNjI1Mn0.OFPx4dWK0zMQGfLuexosklx8huj_pf-_mngCYmRDgGY
